@@ -7,7 +7,7 @@ function cook_enqueue_styles(){
 
 add_action("wp_enqueue_scripts", "cook_enqueue_styles");
 
-function cook_register_menu (){ 
+function cook_register_menu(){ 
     register_nav_menu("home", "Home");
 }
 add_action("init", "cook_register_menu")
